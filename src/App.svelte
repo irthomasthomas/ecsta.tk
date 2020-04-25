@@ -58,12 +58,13 @@
 
   function searchEcsta() {
     isLoading = true;
-    const endpoint = `http://192.168.43.226:9090/enqueue?tag=${searchTerm}&page=${nextPage}`;
+    const endpoint = `http://157.52.255.203:9090/enqueue?tag=${searchTerm}&page=${nextPage}`;
     // const endpoint = `http://thomasthomas.tk:9090/enqueue?tag=${searchTerm}&page=${nextPage}`;
     
     fetch(endpoint)
       .then(response => {
         if (!response.ok) {
+          alert(response.statusText);
           throw Error(response.statusText);
         }
         return response.json();
@@ -81,7 +82,7 @@
           nextPage += 1;
         }
       })
-      .catch(() => alert("An error occured!"))
+      .catch(() => alert('${response.statusText} Oh An error occured!'))
       .finally(() => {
         isLoading = false;
 

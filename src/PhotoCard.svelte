@@ -106,10 +106,11 @@
       <img class="photo" src={photo.imgUrl} crossorigin="anonymous" alt={photo.rootTag || ""} on:click={sayHello}>
       <div class="ribbon"><span>{photo.rootTag}</span></div>
   </li>
+<!-- None of these related are showing on front -->
 {:else if photo.related != "False"}
 <li class="photo-card">
       <img class="photo" src={photo.imgUrl} crossorigin="anonymous" alt={photo.related || ""} on:click={openRelated}>
-      <div class="ribbon"><span>#{photo.related}</span></div>
+      <div class="ribbon"><span>#{photo.related}2</span></div>
 </li>
 {:else}
   <li class="photo-card">

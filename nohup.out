@@ -1,0 +1,26 @@
+
+> svelte-app@1.0.0 start /root/rope/webserver/sites/ecsta
+> sirv public --single --port 8080
+
+[H[2J
+  [32mYour application is ready~! 🚀
+
+[39m  [1m- Local:[22m      http://157.52.255.203:8080
+  [1m- Network:[22m    http://157.52.255.203:8080
+
+[7m LOGS [27m
+
+  [[35m04:39:11[39m] [32m200[39m[90m ─ [39m[37m[1m8.61ms[39m[22m[90m ─ [39m/
+  [[35m04:39:11[39m] [32m200[39m[90m ─ [39m[37m[1m2.31ms[39m[22m[90m ─ [39m/global.css
+  [[35m04:39:11[39m] [32m200[39m[90m ─ [39m[37m[1m9.77ms[39m[22m[90m ─ [39m/bundle.css
+  [[35m04:39:11[39m] [32m200[39m[90m ─ [39m[37m[1m4.21ms[39m[22m[90m ─ [39m/bundle.js
+Traceback (most recent call last):
+  File "/root/rope/webserver/main.py", line 3, in <module>
+    from server import Webserver
+  File "/root/rope/webserver/server.py", line 11, in <module>
+    from response.tagQueueHandler import TagQueueHandler
+  File "/root/rope/webserver/response/tagQueueHandler.py", line 5, in <module>
+    from app.tasks import scrape_tag
+  File "/root/rope/webserver/app/__init__.py", line 2, in <module>
+    from rq import Queue
+ModuleNotFoundError: No module named 'rq'
