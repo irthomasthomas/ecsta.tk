@@ -18,6 +18,6 @@
 <div class="search">
   <form class="search-form" on:submit|preventDefault={handleSubmit}>
     <input bind:value={query} class="search-input" type="search"
-    placeholder="Find artsy stuff for sale on insta" />
+    placeholder="Find stuff for sale on insta" />
   </form>
 </div>

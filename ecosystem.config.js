@@ -11,12 +11,12 @@ module.exports = {
     max_memory_restart: '1G',
     env: {
       PORT: 80,
-      HOST: '157.52.255.203',
+      HOST: '185.214.164.173',
       NODE_ENV: 'development'
     },
     env_production: {
       PORT: 80,
-      HOST: '157.52.255.203',
+      HOST: '185.214.164.173',
       NODE_ENV: 'production'
     }
   }]
