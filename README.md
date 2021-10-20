@@ -5,3 +5,5 @@ source for ecsta.tk website
 # The server scrapes instagram posts in to a redis database
 # Each post is then automatically fed to a machine learning pipeline and redis AI classifies each post
 # Relevant posts that match the machine learning model are saved and made available on the site ecsta.tk
+
+![demo](demo.gif)
